@@ -1,0 +1,37 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage_Bronze",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "weblogs_a55d559e-fb82-4ec6-82ba-c491c872ead3.json",
+				"folderPath": "weblogs",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"session_id": {
+					"type": "string"
+				},
+				"customer_id": {
+					"type": "string"
+				},
+				"page": {
+					"type": "string"
+				},
+				"timestamp": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

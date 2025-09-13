@@ -1,0 +1,23 @@
+{
+	"name": "DS_Transactions_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HTTPGithub",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "customer_data/refs/heads/main/transactions_2025-09-13.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,19 @@
+{
+	"name": "DS_Weblogs_JSON",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HTTPGithub",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "customer_data/refs/heads/main/weblogs_2025-09-13.json"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
